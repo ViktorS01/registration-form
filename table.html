@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>table</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+<body>
+
+	<form action="check.php" method="">
+
+		<fieldset>
+
+		<div class="container">
+
+			<h1>Регистрация</h1>
+
+			<div class="personal_information">
+
+				<h2 class="i"> Личная информация </h2> 
+
+				<div class="group">
+					<label class="control-label required">Фамилия</label>
+					<input type="text" name="surname" required="required" pattern="[А-Яа-яЁё]">
+				</div>
+
+				<div class="group">
+					<label class="control-label required" >Имя</label>
+					<input type="text" name="NamePerson" required="required" pattern="[А-Яа-яЁё]">
+				</div>
+
+				<div class="group">
+					<label>Отчество</label>
+					<input type="text" name="patronymic" pattern="[А-Яа-яЁё]" required="required">
+				</div>
+
+				<div class="group">
+					<label class="control-label required">Пол</label>
+					<input required="required" type="radio" name="gender" value="male" checked> Мужской
+					<input required="required" type="radio" name="gender" value="female" > Женский
+				</div>
+
+				<div class="group">
+					<label>Цвет глаз</label>
+					<input type="color" name="color_eye">
+				</div>
+
+				<div class="group">
+					<label class="control-label required">Дата рождения</label>
+					<input type="text" name="dob" required="required" >
+				</div>
+
+				<div class="group">
+					<label>Возраст</label>
+					<input type="number" name="age" min="18" max="100" value="18" size="2">
+				</div>
+
+				<div class="group">
+					<label class="control-label required">Место рождения</label>
+					<input list="computers" />
+					<datalist id="computers">
+					<option value="Ершов" ></option>
+					<option value="Саратов" ></option>
+					<option value="Ереван" ></option>
+					<option value="Москва" ></option>
+					</datalist>
+
+				</div>
+
+				<div class="group">
+					<label class="control-label required" pattern="[0-9]{6}">Индекс</label>
+					<input required="required" type="text" name="index">
+				</div>
+
+				<div class="group">
+					<label class="control-label required">Домашний адрес</label>
+					<input required="required" type="text" name="address">
+				</div>
+
+				</div>
+
+				<div class="group">
+					<label class="control-label required">Дата регистрации</label>
+					<input required="required" type="date" name="date">
+				</div>
+
+			<div class="contact_information">
+
+				<h2 class="i"> Контактная информация</h2>
+
+					<div class="group">
+						<label class="control-label required">E-mail</label>
+						<input required="required" type="email" name="E-mail">
+					</div>
+
+					<div class="group">
+						<label class="control-label required">Номер телефона</label>
+						<input required="required" type="tel" pattern="+7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+					</div>
+			</div>
+
+			<div class="general_information">
+
+				<h2 class="i"> Общая информация</h2>
+
+				<div class="group">
+
+				<h7><i>Скриншот первой страницы паспорта.</i><br><br></h7>
+				<label>Загрузите фотографию в JPG/JPEG<br></label>
+				<input type="file" name="passport" accept="image/jpeg" title="Загрузите фотографию в JPG/JPEG" required>
+				</div>
+
+				<div class="group">
+				<label><i>Откуда вы узнали о нашем сайте?</i><br></label>
+				<select type="text" name="NamePerson" multiple="">
+					<option>Рассказали друзья</option>
+					<option>Увидел рекламу</option>
+					<option>Сама судьба привела меня сюда</option>
+					<option>Где я?!</option>
+				</select>
+				</div>
+
+				<div>
+					<label>Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных
+					<input type="checkbox" name="person">
+					</label>
+				</div>
+
+			</div>
+
+			<div class="button">
+
+				<div class="button">
+					<button>Отправить</button>
+				</div>
+
+				<div class="button">
+					<button>Очистить</button>
+				</div>
+
+			</div>
+		</div>
+	</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+body{
+	font-family: 'Montserrat', sans-serif;
+	background-color: #B0E0E6;
+	margin: 0;
+	background-image: url(foto.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+form{
+	margin: 0 auto;
+	background: #FFFFFF;
+	opacity: 95%;
+	width: 650px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+h1{
+	cursor: help;
+	margin: 0;
+	text-transform: uppercase;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #808080;
+}
+
+.i{
+	font-size: 15px;
+}
+
+.group{
+	margin: 10px;
+	padding: 5px;
+}
+
+label{
+	padding-left: 10px;
+}
+
+
+label.required:after{
+	color: red;
+	content: " *";
+}
+
+.button{
+	text-align: center;
+}
